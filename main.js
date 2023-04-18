@@ -4,7 +4,7 @@ let seriesPending = ['Breaking Bug', 'Game of Drones', 'Boolean 99', 'Arrested D
 // Add a new string value at the end of the array
 seriesPending.push('Gossip Girl');
 
-// loop for
+// loop for printing all the elements and to check if the element 'Boolean 99' is in the array
 
 for (let i = 0; i < seriesPending.length; i++) {
     console.log(`Serie ${i}: ${seriesPending[i]}`);
@@ -25,11 +25,11 @@ seriesWatching.push(serie);
 console.log(`Pending: ${seriesPending.length}`);
 console.log(`Watching: ${seriesWatching.length}`);
 
-console.log(seriesPending);
-console.log(seriesWatching);
+//Remove the firts 4 elements of the array called seriesPending and add it to the new array
 for (let i = 0; i < 4; i++) {
     seriesWatching.push(seriesPending.shift());
 }
+
 console.log('After removing all the elements from seriesPending');
 console.log(`Pending: ${seriesPending.length}`);
 console.log(`Watching: ${seriesWatching.length}`);
